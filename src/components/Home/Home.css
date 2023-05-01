@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;500;600;700&family=Instrument+Serif&family=Playfair+Display:wght@400;500;600;700;800&display=swap'); 
+
+.home{
+    text-align: center;
+    color: white;
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient( #1013319b, #1b4a0d94), url(../../../src/assets/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-text{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
