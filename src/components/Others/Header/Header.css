@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;500;600;700&family=Instrument+Serif&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+.h1{
+    font-family: 'Playfair Display', serif;
+    font-weight:bolder;
+    font-size: 30px;
+}
+span{
+    color: rgba(177, 32, 177, 0.993);
+    font-weight: 800;
+}
+
+img{
+    width: 35px;
+}
