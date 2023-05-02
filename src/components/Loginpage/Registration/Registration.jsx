@@ -17,9 +17,9 @@ const Registration = () => {
         const email = form.email.value;
         const password = form.password.value
         const photo = form.photo.value;
-        // if(!/^(?=.*\d).{8,}$/.test(password)){
-        //     setError("Password is less than six character")
-        // }
+        if(password.length < 6){
+            setError("The password is less than 6 characters")
+        }
 
         createUser(email, password)
         .then(result =>{

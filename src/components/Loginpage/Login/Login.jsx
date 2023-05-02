@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import './Login.css'
 import slide1 from '../../../assets/slide-1.jpg'
@@ -7,6 +7,7 @@ import { AuthContext } from '../../../providers/AuthProvider';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
+    const [error, setError] = useState('');
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -15,6 +16,10 @@ const Login = () => {
         const password = form.password.value;
 
 
+        if(!password){
+            setError('Email or Password does not match')
+        }
+
         signIn(email, password)
         .then(result =>{
             const loggedUser = result.user;
@@ -22,7 +27,7 @@ const Login = () => {
             event.target.reset()
         })
         .catch(error =>{
-            console.log(error);
+            setError('Email or Password does not match');
         })
     }
 
@@ -35,6 +40,7 @@ const Login = () => {
                             <form onSubmit={handleLogin} className='d-flex flex-column justify-content-center align-items-center mt-5'>
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="email" placeholder='Enter Your Email' name='email' required />
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="password" placeholder='Enter Your Password' name='password' required />
+                                <p className='text-danger'>{error}</p>
                                 <button className=' mb-4 btn btn-success w-25 py-2' >Login</button>
                                 <p>Don't Have An Account <Link className='text-success' to="/register">Register</Link> </p>
 
