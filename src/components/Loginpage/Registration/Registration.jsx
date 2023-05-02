@@ -1,11 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import slide1 from '../../../assets/slide-1.jpg'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 const Registration = () => {
     const { createUser } = useContext(AuthContext);
+    const [error, setError] = useState('');
+
 
     const handleRegister = event => {
         event.preventDefault();
@@ -27,6 +30,18 @@ const Registration = () => {
         })
     }
 
+    // const updateUserData = (user, photo) =>{
+    //     updateProfile(user, {
+    //         displayPhoto: photoURL
+    //     })
+    //     .then(() =>{
+    //         console.log('user photo')
+    //     })
+    //     .catch(error =>{
+    //         console.log(error.message)
+    //     })
+    // }
+
     return (
         <Container className='mt-5 pt-5 h-100'>
             <div className="card mb-3">
@@ -45,6 +60,7 @@ const Registration = () => {
                                 <p>Already Have An Account ? Then<Link className='text-success' to="/login"> LogIn </Link> </p>
 
                             </form>
+                            <p className='text-danger'>{error}</p>
                         </div>
                     </div>
                     <div className="col-md-6 siderbar">
