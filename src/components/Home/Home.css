@@ -5,9 +5,10 @@
     color: white;
     height:100vh;
     width: 100%;
-    background-image: linear-gradient( #1013319b, #1b4a0d94), url(../../../src/assets/slide2.jpg);
+    background-image: linear-gradient( #101331d2, #1b4a0db3), url(../../../src/assets/bannerimg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    
 
 }
 

@@ -18,8 +18,8 @@ const Testimonials = () => {
                         <div className="card-body">
                             <img className='w-25 rounded-circle' src={image1} alt="" />
                             <h5 className="card-title fw-semibold">John Smith</h5>
-                            <h6 className="card-title text-success fw-bold">Steak Frites</h6>
-                            <p className="card-text">The Steak Frites was cooked to perfection with a beautiful sear on the outside and a juicy pink center. The fries were crispy and perfectly seasoned. The herb butter added a nice touch of flavor to the steak. The portion size was generous and worth the price.</p>
+                            <h6 className="card-title text-success fw-bold">Bibimbap</h6>
+                            <p className="card-text">The Bibimbap recipe on CookiLious was fantastic! The instructions were easy to follow and the end result was delicious. The combination of flavors and textures was perfect, and the dish looked beautiful as well. The website has a lot of other great recipes too, and I would highly recommend it to anyone interested in Korean cooking.</p>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                             <img className='w-25 rounded-circle' src={image2} alt="" />
                             <h5 className="card-title fw-semibold">Samantha Lee</h5>
                             <h6 className="card-title text-success fw-bold">Sushi Platter</h6>
-                            <p className="card-text">The Sushi Platter was impressive with a wide variety of rolls. The fish was fresh and the presentation was beautiful. The only downside was that some of the rolls were a bit too saucy and overpowered the flavor of the fish. Overall, a great sushi experience</p>
+                            <p className="card-text">The Sushi Platter recipes were impressive with a wide variety of rolls. The fish was fresh and the presentation was beautiful. The only downside was that some of the rolls were a bit too saucy and overpowered the flavor of the fish. Overall, a great sushi-making experience</p>
                         </div>
                     </div>
                 </div>
@@ -38,8 +38,8 @@ const Testimonials = () => {
                         <div className="card-body">
                             <img className='w-25 rounded-circle' src={image3} alt="" />
                             <h5 className="card-title fw-semibold">Michael Johnson</h5>
-                            <h6 className="card-title text-success fw-bold">Butter Chicken</h6>
-                            <p className="card-text">The Butter Chicken had a great balance of spice and creaminess. The naan bread was fresh and fluffy. However, the portion size was a bit small for the price. Would have liked more chicken in the dish.</p>
+                            <h6 className="card-title text-success fw-bold">Japchae</h6>
+                            <p className="card-text">The Japchae recipe was good, but a bit complicated. The ingredients list was quite long and some of the steps were a bit confusing. However, the end result was tasty and authentic. The website has a lot of other great recipes too, and it's a good resource for anyone interested in Korean cuisine.</p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ const Testimonials = () => {
                         <div className="card-body">
                             <img className='w-25 rounded-circle' src={image4} alt="" />
                             <h5 className="card-title fw-semibold">Emily Davis</h5>
-                            <h6 className="card-title text-success fw-bold">Avocado Toast</h6>
-                            <p className="card-text">The Avocado Toast was good, but nothing special. The bread was a bit too thick and dense for my liking. The avocado was fresh and mashed well. The poached egg was cooked perfectly, but the dish could have benefited from a bit more seasoning.</p>
+                            <h6 className="card-title text-success fw-bold">Korean Fried Chicken</h6>
+                            <p className="card-text">"The Korean Fried Chicken recipe was amazing! The chicken was crispy and flavorful, and the sauce was the perfect balance of sweet and spicy. The recipe was easy to follow and the end result was restaurant-quality. The website has a lot of other great recipes too, and I would highly recommend it to anyone looking to try their hand at Korean cooking.</p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,8 @@ const Testimonials = () => {
                         <div className="card-body">
                             <img className='w-25 rounded-circle' src={image5} alt="" />
                             <h5 className="card-title fw-semibold">David Kim</h5>
-                            <h6 className="card-title text-success fw-bold">Pad See Ew</h6>
-                            <p className="card-text">The Pad See Ew was amazing. The noodles were perfectly cooked with a nice chewy texture. The beef was tender and the vegetables were cooked just right. The sauce was flavorful and not too sweet. Would highly recommend.</p>
+                            <h6 className="card-title text-success fw-bold">Galbi</h6>
+                            <p className="card-text">The Galbi recipe was really good! The marinade was flavorful and the meat was tender and juicy. The recipe was easy to follow and the end result was delicious. The website has a lot of other great Korean recipes too, and it's a good resource for anyone interested in Korean cuisine</p>
                         </div>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ const Testimonials = () => {
                         <div className="card-body">
                             <img className='w-25 rounded-circle ' src={image6} alt="" />
                             <h5 className="card-title fw-semibold">Sarah Lee</h5>
-                            <h6 className="card-title text-success fw-bold">Margherita Pizza</h6>
-                            <p className="card-text">The Margherita Pizza was delicious with a crispy crust and fresh tomato sauce. The mozzarella cheese was perfectly melted. However, the pizza was a bit greasy and could have used a bit more seasoning. Overall, a good pizza option.</p>
+                            <h6 className="card-title text-success fw-bold">Dak Galbi</h6>
+                            <p className="card-text">The ingredients and recipes of The Dak Galbi recipe was fantastic! The chicken was perfectly cooked and the vegetables were all fresh and crisp. I liked and enjoyed so much while making this recipes</p>
                         </div>
                     </div>
                 </div>

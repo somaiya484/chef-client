@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -7,8 +7,10 @@ import logo from '../../../assets/download-removebg-preview.png'
 import './Header.css'
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Header = () => {
+    const { user } = useContext(AuthContext);
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
@@ -28,16 +30,15 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link className='text-black fw-bold' href="#action1">Home</Nav.Link>
-                        <Nav.Link className='text-black fw-bold' href="#action1">Blog </Nav.Link>
-                        <Nav.Link className='text-black fw-bold' href="#action1">Home</Nav.Link>
-                        <Button className='btn' variant="success">Log In</Button>
-                        {/* {user ?
-                            <Button className='btn' variant="success">Log Out</Button> :
+                        <Link className='text-black fw-bold text-decoration-none me-2' to='/home'>Home</Link>
+                        <Link className='text-black fw-bold text-decoration-none me-2' to='/blog'>Blog</Link>
+                        {user ?
+                            <Button className='btn' variant="success">Log Out</Button>
+                            :
                             <Link to='/login'>
                                 <Button className='btn' variant="success">Log In</Button>
                             </Link>
-                        } */}
+                        }
                     </Nav>
 
                 </Navbar.Collapse>

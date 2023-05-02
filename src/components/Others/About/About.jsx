@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container} from 'react-bootstrap';
-import slide3 from '../../../assets/slide3.jpg'
+import slide3 from '../../../assets/banner-1.jpeg'
 
 const About = () => {
     return (
@@ -13,7 +13,7 @@ const About = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
-                            <p className="card-text fw-semibold mt-4">These website provide detailed posts that include step-by-step br instructions, photos, and a list of ingredients required to make a particular dish. Recipe posts can be categorized based on meal types, cuisine types, dietary restrictions, or special occasions.Here are some  informative posts that provide readers with helpful cooking tips and techniques to make cooking easier, more efficient, and more enjoyable. Cooking tips can cover topics such as knife skills, meal prep, kitchen organization, and more.</p>
+                            <p className="card-text fw-semibold mt-4">This website provide detailed posts or blogs about Korean Dishes, that include step-by-step instructions, photos, and a list of ingredients required to make a particular dish. Recipe posts can be categorized based on meal types, cuisine types, dietary restrictions, or special occasions.Here are some  informative posts that provide readers with helpful cooking tips and techniques to make cooking easier, more efficient, and more enjoyable. Cooking tips can cover topics such as knife skills, meal prep, kitchen organization, and more.</p>
                         </div>
                     </div>
                 </div>
