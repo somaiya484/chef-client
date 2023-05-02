@@ -3,7 +3,7 @@
 .home{
     text-align: center;
     color: white;
-    height: 90vh;
+    height:100vh;
     width: 100%;
     background-image: linear-gradient( #1013319b, #1b4a0d94), url(../../../src/assets/slide2.jpg);
     background-repeat: no-repeat;

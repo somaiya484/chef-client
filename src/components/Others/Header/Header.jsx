@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand className='h1 ms-3 fw-bold fs-3' href="#"><img src={logo} alt="" />  Cooki<span className='text-success fw-bolder'>Lious</span> </Navbar.Brand>
+                <Navbar.Brand className='h1 fw-bold fs-3' href="#"><img src={logo} alt="" />  Cooki<span className='text-success fw-bolder'>Lious</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Form className="d-flex ms-auto">
