@@ -17,30 +17,21 @@ const Registration = () => {
         const email = form.email.value;
         const password = form.password.value
         const photo = form.photo.value;
+        // if(!/^(?=.*\d).{8,}$/.test(password)){
+        //     setError("Password is less than six character")
+        // }
 
-
-        console.log(name, photo, email, password)
         createUser(email, password)
         .then(result =>{
             const createdUser = result.user;
             console.log(createdUser);
+            setError('');
+            event.target.reset()
         })
         .catch(error =>{
-            console.log(error);
+            setError('The password is less than 6 characters');
         })
     }
-
-    // const updateUserData = (user, photo) =>{
-    //     updateProfile(user, {
-    //         displayPhoto: photoURL
-    //     })
-    //     .then(() =>{
-    //         console.log('user photo')
-    //     })
-    //     .catch(error =>{
-    //         console.log(error.message)
-    //     })
-    // }
 
     return (
         <Container className='mt-5 pt-5 h-100'>
@@ -52,6 +43,7 @@ const Registration = () => {
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="text" placeholder=' Your name' name='name' required />
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="email" placeholder=' Email' name='email' required />
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="password" placeholder='Password' name='password' required />
+                                <p className='text-danger'>{error}</p>
 
                                 <input className=' mb-4 w-75 py-3 px-2 border-0 shadow' type="text" placeholder='Photo URL' name='photo' required />
 
@@ -60,7 +52,7 @@ const Registration = () => {
                                 <p>Already Have An Account ? Then<Link className='text-success' to="/login"> LogIn </Link> </p>
 
                             </form>
-                            <p className='text-danger'>{error}</p>
+                            
                         </div>
                     </div>
                     <div className="col-md-6 siderbar">
