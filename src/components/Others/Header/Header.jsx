@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../../assets/download-removebg-preview.png'
 import './Header.css'
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -27,10 +28,16 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link   className='text-black fw-bold' href="#action1">Home</Nav.Link> 
-                        <Nav.Link className='text-black fw-bold' href="#action1">Blog </Nav.Link> 
-                        <Nav.Link className='text-black fw-bold' href="#action1">Home</Nav.Link> 
-                        <Button className='btn' variant="success">Log In</Button>{' '}
+                        <Nav.Link className='text-black fw-bold' href="#action1">Home</Nav.Link>
+                        <Nav.Link className='text-black fw-bold' href="#action1">Blog </Nav.Link>
+                        <Nav.Link className='text-black fw-bold' href="#action1">Home</Nav.Link>
+                        <Button className='btn' variant="success">Log In</Button>
+                        {/* {user ?
+                            <Button className='btn' variant="success">Log Out</Button> :
+                            <Link to='/login'>
+                                <Button className='btn' variant="success">Log In</Button>
+                            </Link>
+                        } */}
                     </Nav>
 
                 </Navbar.Collapse>

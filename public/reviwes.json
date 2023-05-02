@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "reviewer": "John Smith",
+        "dish": "Steak Frites",
+        "comment": "The Steak Frites was cooked to perfection with a beautiful sear on the outside and a juicy pink center. The fries were crispy and perfectly seasoned. The herb butter added a nice touch of flavor to the steak. The portion size was generous and worth the price."
+    },
+    {
+        "id": 2,
+        "reviewer": "Samantha Lee",
+        "dish": "Sushi Platter",
+        "comment": "The Sushi Platter was impressive with a wide variety of rolls. The fish was fresh and the presentation was beautiful. The only downside was that some of the rolls were a bit too saucy and overpowered the flavor of the fish. Overall, a great sushi experience."
+    },
+    {
+        "id": 3,
+        "reviewer": "Michael Johnson",
+        "dish": "Butter Chicken",
+        "comment": "The Butter Chicken had a great balance of spice and creaminess. The naan bread was fresh and fluffy. However, the portion size was a bit small for the price. Would have liked more chicken in the dish."
+    },
+    {
+        "id": 4,
+        "reviewer": "Emily Davis",
+        "dish": "Avocado Toast",
+        "comment": "The Avocado Toast was good, but nothing special. The bread was a bit too thick and dense for my liking. The avocado was fresh and mashed well. The poached egg was cooked perfectly, but the dish could have benefited from a bit more seasoning."
+    },
+    {
+        "id": 5,
+        "reviewer": "David Kim",
+        "dish": "Pad See Ew",
+        "comment": "The Pad See Ew was amazing. The noodles were perfectly cooked with a nice chewy texture. The beef was tender and the vegetables were cooked just right. The sauce was flavorful and not too sweet. Would highly recommend."
+    },
+    {
+        "id": 6,
+        "reviewer": "Sarah Lee",
+        "dish": "Margherita Pizza",
+        "comment": "The Margherita Pizza was delicious with a crispy crust and fresh tomato sauce. The mozzarella cheese was perfectly melted. However, the pizza was a bit greasy and could have used a bit more seasoning. Overall, a good pizza option."
+    }
+]

@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css'
 import About from '../Others/About/About';
+import Testimonials from '../Others/Testimonials/Testimonials';
+import { useLoaderData } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
+    const reviews = useLoaderData();
     return (
         <div>
             <div className='home'>
@@ -12,6 +16,7 @@ const Home = () => {
                 </div>
             </div>
             <About></About>
+            <Testimonials></Testimonials>
         </div>
     );
 };

@@ -4,8 +4,8 @@ import slide3 from '../../../assets/slide3.jpg'
 
 const About = () => {
     return (
-        <div className='container'>
-            <h2 className='text-center mt-5 pt-3'>About CookiLious</h2>
+        <div className='container mb-5'>
+            <h2 className='text-center mt-5 pt-3 fs-1'>About Cooki<span className='text-success fw-bolder'>Lious</span></h2>
             <div className="card mb-3  border-0 mt-4">
                 <div className="row g-0 ">
                     <div className="col-md-6">
