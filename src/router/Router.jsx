@@ -6,7 +6,10 @@ import Login from "../components/Loginpage/Login/Login";
 import LoginPage from "../components/Loginpage/LoginPage";
 import Registration from "../components/Loginpage/Registration/Registration";
 import Chef from "../components/Others/Chef/Chef";
-import ChefRecipies from "../components/ChefRecipies/ChefRecipies";
+// import ChefRecipies from "../components/ChefRecipies/ChefRecipies";
+import Errorpage from "../components/ErrorPage/ErroePage";
+import ChefInfo from "../components/Others/Chef/ChefInfo";
+import ChefRecipies from "../components/Others/Chef/ChefRecipies";
 
 const router = createBrowserRouter([
     {
@@ -27,31 +30,26 @@ const router = createBrowserRouter([
             }
         ]
     },
-
     {
         path: '/',
         element: <Main></Main>,
+        // errorElement:<Errorpage></Errorpage>,
         children: [
             {
                 path: '/home',
                 element: <Home></Home>,
             },
+            {
+                path:'/chefRecipes/:id',
+                element:<ChefRecipies></ChefRecipies>,
+                loader:({params}) => fetch(`http://localhost:5000/chef/${params.id}`)
+            }
         ]
     },
     {
         path: '/blog',
         element: <Blog></Blog>
     },
-    // {
-    //     path: '/chef/:id',
-    //     element: <ChefRecipies></ChefRecipies>,
-    //     loader:({params}) => fetch(`http://localhost:5000/chef/${params.id}`)
-    // },
-    {
-        path:'/chef/:id',
-        element:<Chef></Chef>,
-        loader:({params}) => fetch(`http://localhost:5000/chef/${params.id}`)
-    }
 
 
 ]);

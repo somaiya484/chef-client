@@ -32,7 +32,7 @@ const Header = () => {
                     >
                         <Link className='text-black fw-bold text-decoration-none me-2' to='/home'>Home</Link>
                         <Link className='text-black fw-bold text-decoration-none me-2' to='/blog'>Blog</Link>
-                        <Link className='text-black fw-bold text-decoration-none me-2' to='/chef/:id'>Recipes</Link>
+                        <Link className='text-black fw-bold text-decoration-none me-2'>Recipes</Link>
                         {user ?
                             <Button className='btn' variant="success">Log Out</Button>
                             :

@@ -1,9 +1,11 @@
 import React from 'react';
-import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap';
 import  './chef.css'
+import { Link, useLoaderData, useParams } from 'react-router-dom';
+
 
 const ChefInfo = ({ info }) => {
-    const { id, name, picture, experience, num_recipes, likes } = info
+
+    const { name, picture, experience, num_recipes, likes } = info
     return (
         <div>
             <div className="col ">
@@ -16,7 +18,10 @@ const ChefInfo = ({ info }) => {
                         <p className="card-text">Experience: <span className='fw-semibold'>{experience} Years</span></p>
                         <p>Recipes Number: <span className='fw-semibold'>{num_recipes}</span></p>
                         <p>Peoples Reaction: <span className='fw-semibold'>{likes}</span></p>
-                        <button className='btn btn-success py-2'>View Recipes</button>
+                        {/* <button className='btn btn-success py-2'><Link to='/chefRecipies'>View Recipes</Link></button> */}
+                        <Link to={`/chef/${chef.id}`}>
+                            <button className='btn btn-success py-2'>View Details</button>
+                        </Link>
                         
                     </div>
                 </div>
