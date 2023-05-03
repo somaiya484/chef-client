@@ -33,7 +33,7 @@ const Login = () => {
 
     return (
         <Container className='mt-5 pt-5 h-100'>
-            <div className="card mb-3">
+            <div className="card mb-5 pb-5">
                 <div className="row g-0 text-center">
                     <div className="col-md-6">
                         <div className="card-body  py-4">

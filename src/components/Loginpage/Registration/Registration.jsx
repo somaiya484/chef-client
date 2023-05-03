@@ -17,7 +17,7 @@ const Registration = () => {
         const email = form.email.value;
         const password = form.password.value
         const photo = form.photo.value;
-        if(password.length < 6){
+        if(/^[0-9]+$/.test(password)){
             setError("The password is less than 6 characters")
         }
 
