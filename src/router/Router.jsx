@@ -8,7 +8,6 @@ import Registration from "../components/Loginpage/Registration/Registration";
 import Chef from "../components/Others/Chef/Chef";
 // import ChefRecipies from "../components/ChefRecipies/ChefRecipies";
 import Errorpage from "../components/ErrorPage/ErroePage";
-import ChefInfo from "../components/Others/Chef/ChefInfo";
 import ChefRecipies from "../components/Others/Chef/ChefRecipies";
 
 const router = createBrowserRouter([

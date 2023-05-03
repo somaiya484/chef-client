@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
-import ChefInfo from './ChefInfo';
 import './chef.css'
 
 const Chef = () => {
@@ -18,7 +17,7 @@ const Chef = () => {
     return (
 
         <Container>
-            <h2 className='text-center mt-5 pt-3 fs-1'>About Cooki<span className='text-success fw-bolder'>Lious</span></h2>
+            <h2 className='text-center mt-5 pt-3 fs-1'>Awesome<span className='text-success fw-bolder'> CHEFS</span></h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 {
                     chefs.map(chef => (
