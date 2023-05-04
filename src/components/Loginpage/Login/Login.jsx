@@ -50,6 +50,11 @@ const Login = () => {
 
                                 <p><small>or</small></p>
 
+                                <button className=' mb-4 btn btn-success w-25 py-2 w-50' >Login With Google</button>
+                                <button className=' mb-4 btn btn-success w-25 py-2  w-50' >Login With Github</button>
+
+
+
 
 
                             </form>

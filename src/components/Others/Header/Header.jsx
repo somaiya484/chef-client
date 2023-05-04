@@ -36,7 +36,6 @@ const Header = () => {
                     >
                         <Link className='text-black fw-bold text-decoration-none me-4' to='/home'>Home</Link>
                         <Link className='text-black fw-bold text-decoration-none me-4' to='/blog'>Blog</Link>
-                        <Link className='text-black fw-bold text-decoration-none me-4'>Recipes</Link>
                         {user ?
                             <Button onClick={handleLogOut} className='btn' variant="success">Log Out</Button>
                             :

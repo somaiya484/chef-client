@@ -3,16 +3,18 @@ import { Container } from 'react-bootstrap';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './ChefRec.css'
 import { FaStar } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ChefRecipies = () => {
     const recipes = useLoaderData();
-    console.log(recipes)
+    const notify = () => toast("Add to yours Favorite");
 
     return (
 
         <Container className='mt-5 pt-2'>
 
-            <div className="card mb-5 pb-3 w-75 mx-auto border-0 shadow">
+            <div className="card mb-5 pb-3 w-75 mx-auto border-0 ">
                 <img src={recipes.picture} className="img card-img-top p-3 rounded-lg" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title fw-bold text-success">{recipes.name}</h5>
@@ -45,6 +47,8 @@ const ChefRecipies = () => {
 
                             <p className="card-text"><span className='text-success fw-semibold text-decoration-underline'>Cooking Method:</span> <span className=''>{recipes.cooking_method1}</span></p>
                             <p className='d-flex justify-content-start align-items-center'><FaStar className='text-success me-1'></FaStar> <span className='fw-semibold'>{recipes.rating1}</span></p>
+                            <button onClick={notify} className='btn btn-success'>Add To Favorite</button>
+                            <ToastContainer />
                         </div>
                     </div>
                 </div>
@@ -69,7 +73,7 @@ const ChefRecipies = () => {
 
                             <p className="card-text"><span className='text-success fw-semibold text-decoration-underline'>Cooking Method:</span> <span className=''>{recipes.cooking_method2}</span></p>
                             <p className='d-flex justify-content-start align-items-center'><FaStar className='text-success me-1'></FaStar> <span className='fw-semibold'>{recipes.rating2}</span></p>
-                            <button className='btn btn-success'>Add To Favorite</button>
+                            <button onClick={notify} className='btn btn-success'>Add To Favorite</button>
                         </div>
                     </div>
                 </div>
@@ -94,6 +98,7 @@ const ChefRecipies = () => {
 
                             <p className="card-text"><span className='text-success fw-semibold text-decoration-underline'>Cooking Method:</span> <span className=''>{recipes.cooking_method3}</span></p>
                             <p className='d-flex justify-content-start align-items-center'><FaStar className='text-success me-1'></FaStar> <span className='fw-semibold'>{recipes.rating3}</span></p>
+                            <button onClick={notify} className='btn btn-success'>Add To Favorite</button>
                         </div>
                     </div>
                 </div>
