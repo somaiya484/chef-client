@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import slide1 from '../../../assets/slide-1.jpg'
+import slide1 from '../../../assets/signup.jpg'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import { updateProfile } from 'firebase/auth';
@@ -34,8 +34,8 @@ const Registration = () => {
     }
 
     return (
-        <Container className='mt-5 pt-5 h-100'>
-            <div className="card mb-3">
+        <Container className='mt-5 pt-5 h-100 border-0 shadow'>
+            <div className="card mb-3 border-0">
                 <div className="row g-0 text-center">
                     <div className="col-md-6">
                         <div className="card-body  py-4">
