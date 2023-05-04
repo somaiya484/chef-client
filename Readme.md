@@ -1,8 +1,6 @@
 ## Live Link
 Hosted in Netlify -> [JobApplied](https://vermillion-bombolone-f5585c.netlify.app)
 
-1. 
-
 ## Header 
 A navbar is there with home, blog, login link.
 

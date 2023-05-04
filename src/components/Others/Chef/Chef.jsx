@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import './chef.css'
+import LazyLoad from 'react-lazy-load';
 
 const Chef = () => {
     const [chefs, setChef] = useState([]);
@@ -25,7 +26,9 @@ const Chef = () => {
                             <div className="col ">
                                 <div className="card mb-3  border-0 shadow ">
                                     <div className='w-100 h-50'>
-                                        <img src={chef.picture} className="img1 card-img-top p-3 rounded-lg" alt="..." />
+                                        <LazyLoad >
+                                            <img src={chef.picture} className="img1 card-img-top p-3 rounded-lg" alt="..." />
+                                        </LazyLoad>
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title fw-bold text-success">{chef.name}</h5>

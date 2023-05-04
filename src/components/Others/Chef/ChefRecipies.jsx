@@ -5,6 +5,8 @@ import './ChefRec.css'
 import { FaStar } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LazyLoad from 'react-lazy-load';
+
 
 const ChefRecipies = () => {
     const recipes = useLoaderData();
@@ -15,7 +17,9 @@ const ChefRecipies = () => {
         <Container className='mt-5 pt-2'>
 
             <div className="card mb-5 pb-3 w-75 mx-auto border-0 ">
-                <img src={recipes.picture} className="img card-img-top p-3 rounded-lg" alt="..." />
+                <LazyLoad>
+                    <img src={recipes.picture} className="img card-img-top p-3 rounded-lg" alt="..." />
+                </LazyLoad>
                 <div className="card-body">
                     <h5 className="card-title fw-bold text-success">{recipes.name}</h5>
                     <p> <span className='fw-semibold'>{recipes.description}</span></p>
