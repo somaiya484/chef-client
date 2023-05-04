@@ -28,7 +28,7 @@ const ChefRecipies = () => {
             <div class="card mb-3 mx-auto w-75 mb-3">
                 <div class="row g-0">
                     <div class="col-md-5">
-                        <img src={recipes.recipe_img1} class="img-fluid rounded p-3 w-100" alt="..." />
+                        <img src={recipes.recipe_img1} class="img-fluid img-r rounded p-3 w-100" alt="..." />
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
@@ -52,7 +52,7 @@ const ChefRecipies = () => {
             <div class="card mb-3 mx-auto w-75 mb-3">
                 <div class="row g-0">
                     <div class="col-md-5">
-                        <img src={recipes.recipe_img1} class="img-fluid rounded p-3 w-100" alt="..." />
+                        <img src={recipes.recipe_img2} class="img-fluid img-r rounded p-3 w-100" alt="..." />
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
@@ -69,6 +69,7 @@ const ChefRecipies = () => {
 
                             <p className="card-text"><span className='text-success fw-semibold text-decoration-underline'>Cooking Method:</span> <span className=''>{recipes.cooking_method2}</span></p>
                             <p className='d-flex justify-content-start align-items-center'><FaStar className='text-success me-1'></FaStar> <span className='fw-semibold'>{recipes.rating2}</span></p>
+                            <button className='btn btn-success'>Add To Favorite</button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +77,7 @@ const ChefRecipies = () => {
             <div class="card mb-3 mx-auto w-75 mb-3">
                 <div class="row g-0">
                     <div class="col-md-5">
-                        <img src={recipes.recipe_img1} class="img-fluid rounded p-3 w-100" alt="..." />
+                        <img src={recipes.recipe_img3} class="img-fluid img-r rounded p-3 w-100" alt="..." />
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">

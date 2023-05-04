@@ -2,12 +2,14 @@ import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import './Login.css'
 import slide1 from '../../../assets/slide-1.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import ChefRecipies from '../../Others/Chef/ChefRecipies';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -22,8 +24,10 @@ const Login = () => {
 
         signIn(email, password)
         .then(result =>{
+            setError('');
             const loggedUser = result.user;
-            console.log(loggedUser)
+            console.log(loggedUser);
+            navigate('/chefRecipes/:id')
             event.target.reset()
         })
         .catch(error =>{

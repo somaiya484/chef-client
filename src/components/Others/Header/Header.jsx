@@ -10,7 +10,13 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 
 const Header = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () =>{
+        logOut()
+        .then()
+        .catch(error => console.log(error))
+    } 
+
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
@@ -21,8 +27,6 @@ const Header = () => {
                         <Form.Control
                             type="search"
                             placeholder="Search Your Food"
-                            className="me-2"
-                            aria-label="Search"
                         />
                     </Form>
                     <Nav
@@ -30,11 +34,11 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Link className='text-black fw-bold text-decoration-none me-2' to='/home'>Home</Link>
-                        <Link className='text-black fw-bold text-decoration-none me-2' to='/blog'>Blog</Link>
-                        <Link className='text-black fw-bold text-decoration-none me-2'>Recipes</Link>
+                        <Link className='text-black fw-bold text-decoration-none me-4' to='/home'>Home</Link>
+                        <Link className='text-black fw-bold text-decoration-none me-4' to='/blog'>Blog</Link>
+                        <Link className='text-black fw-bold text-decoration-none me-4'>Recipes</Link>
                         {user ?
-                            <Button className='btn' variant="success">Log Out</Button>
+                            <Button onClick={handleLogOut} className='btn' variant="success">Log Out</Button>
                             :
                             <Link to='/login'>
                                 <Button className='btn' variant="success">Log In</Button>
