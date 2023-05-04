@@ -27,7 +27,7 @@ const Login = () => {
             setError('');
             const loggedUser = result.user;
             console.log(loggedUser);
-            navigate('/chefRecipes/:id')
+            navigate('/home')
             event.target.reset()
         })
         .catch(error =>{
