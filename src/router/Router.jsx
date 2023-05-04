@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             {
                 path:'/chefRecipes/:id',
                 element:<ChefRecipies></ChefRecipies>,
-                loader:({params}) => fetch(`http://localhost:5000/chef/${params.id}`)
+                loader:({params}) => fetch(`https://the-recipes-server-somaiyai342-gmailcom.vercel.app/chef/${params.id}`)
             }
         ]
     },

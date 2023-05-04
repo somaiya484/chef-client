@@ -1,5 +1,5 @@
 ## Live Link
-Hosted in Netlify -> [JobApplied](https://vermillion-bombolone-f5585c.netlify.app)
+Hosted in Netlify -> [Korean-Recipes](https://assignment-food-recipes.web.app)
 
 ## Header 
 A navbar is there with home, blog, login link.

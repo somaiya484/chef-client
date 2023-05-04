@@ -8,7 +8,7 @@ const Chef = () => {
     const [chefs, setChef] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/chef')
+        fetch('https://the-recipes-server-somaiyai342-gmailcom.vercel.app/chef')
             .then(res => res.json())
             .then(data => setChef(data))
             .catch(error => console.error(error))
