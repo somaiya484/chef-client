@@ -9,6 +9,12 @@ const Blog = () => {
         <div>
             <Header></Header>
             <Container className='my-5 py-5'>
+                {/* <ReactToPdf targetRef={ref} filename="div-blue.pdf" options={options} x={.5} y={.5} scale={0.8}>
+                    {({ toPdf }) => (
+                        <button className='btn btn-success' onClick={toPdf}>PDF Download</button>
+                    )}
+                </ReactToPdf> */}
+
                 <div className='text-bg-light p-4 mb-4'>
                     <h2 className='text-success'> 1.What is the differences between uncontrolled and controlled components.</h2>
                     <h6>ANS: Uncontrolled components is a form element that stored it's own state internally and handle their own state management. <br /> And Controlled components refer to components that have their state and behavior controlled by the parent component. The difference between uncontrolled and controlled components is, uncontrolled component Maintains its internal state and controlled component doesn't</h6>
@@ -22,7 +28,7 @@ const Blog = () => {
                         <br /> iv. string : The prop should be a string. <br /> And Many more.</h6>
                 </div>
 
-                <div  className='text-bg-light p-4 mb-4'>
+                <div className='text-bg-light p-4 mb-4'>
                     <h2 className='text-success'> 3. What is the difference between nodejs and express js?</h2>
                     <h6>
                         ANS: Node.js is a runtime build components in JavaScript On V8 Javascript engine. It Execute the code on server site, building scalable application of network for Node.js. <br /> And  Express is a framework that sits on top of Node.js and helps us to handle requests and responses. IT provides robuts set of HTTP utilities methods and middleware.
@@ -35,7 +41,6 @@ const Blog = () => {
                         ANS:  Custom hooks is a JavaScript function whose are sharing logic and stateful behavior between components while utilizing the react hook api.  If there is a code in a component that someone want to extract, either for reuse elsewhere or to keep the component simpler. It also allowed to create modules, self-contained function.<br /> This Custom Hooks also used in connection to API, meaningful state, validation, etc etc. And create custom hooks reduce duplication, make code organized and also code reusability.
                     </h6>
                 </div>
-
             </Container>
             <Footer></Footer>
         </div>
