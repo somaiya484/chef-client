@@ -11,7 +11,7 @@ import image6 from '../../../assets/imag-6.jpg'
 const Testimonials = () => {
     return (
         <Container className='pb-5'>
-            <h2 className='text-center mt-5 pt-3 fs-1'>Testim<span className='text-success fw-bolder'>onilas</span></h2>
+            <h2 className='text-center mt-5 pt-3 fs-1'>Happy<span className='text-success fw-bolder'> Reviews</span></h2>
             <div className="row row-cols-1 row-cols-md-3 g-4 text-center mt-3">
                 <div className="col">
                     <div className="card shadow h-100 p-3 mb-5 bg-body-tertiary   border-0  border-0">

@@ -18,7 +18,10 @@ const Chef = () => {
     return (
 
         <Container>
-            <h2 className='text-center mt-5 pt-3 fs-1'>Awesome<span className='text-success fw-bolder'> CHEFS</span></h2>
+            <div className='text-center text-secondary'>
+                <h2 className='text-center mt-5 pt-3 fs-1 text-black'>Awesome<span className='text-success fw-bolder'> CHEFS</span></h2>
+                <p lassName='mt-5 pt-3 text-secondary '>Our Chefs will make your cooking process easy</p>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 {
                     chefs.map(chef => (

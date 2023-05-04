@@ -7,7 +7,10 @@ const Footer = () => {
         <Container fluid>
             <div className='d-flex justify-content-between align-items-center bg-dark text-white py-2 px-3'>
                 <div>
-                    <p><small className='text-center'>Copyright- 2023FoodRecipesWebsite  </small></p>
+                    <p><small className='text-center fs-4'>Cookilious</small></p>
+                </div>
+                <div className='text-center px-4'>
+                    <p><small>Follow us in social media <br />and post the picture of your food</small></p>
                 </div>
                 <div className='d-flex me-2 '>
                     <FaFacebookF className=' me-2'></FaFacebookF>

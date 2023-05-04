@@ -1,0 +1,9 @@
+.order img{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.col{
+    padding: 0px 20px;
+}

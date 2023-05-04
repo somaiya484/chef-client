@@ -5,6 +5,7 @@ import Testimonials from '../Others/Testimonials/Testimonials';
 import { useLoaderData } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Chef from '../Others/Chef/Chef';
+import Ingrediants from '../Others/Ingredriant/Ingrediants';
 
 const Home = () => {
     const reviews = useLoaderData();
@@ -18,6 +19,7 @@ const Home = () => {
             </div>
             <About></About>
             <Chef></Chef>
+            <Ingrediants></Ingrediants>
             <Testimonials></Testimonials>
         </div>
     );
